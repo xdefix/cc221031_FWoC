@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+
+      <style>
+          a{
+              display: inline-block;
+              margin: 0 1rem;
+          }
+      </style>
+  </head>
+  <style>
+      #app {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      #app router-view {
+          /* reset the centering styles for the router-view element */
+          margin: 0;
+          padding: 0;
+          display: block;
+      }
+  </style>
+  <body>
+    <div id="app">
+        <h1>Hello App!</h1>
+        <p>
+            <!-- use the router-link component for navigation. -->
+            <!-- specify the link by passing the `to` prop. -->
+            <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
+            <router-link to="/">Go to Home</router-link>
+            <router-link to="/about">Go to About</router-link>
+            <router-link to="/game">Go to Game</router-link>
+        </p>
+        <!-- route outlet -->
+        <!-- component matched by the route will render here -->
+        <router-view></router-view>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
