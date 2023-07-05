@@ -1,7 +1,7 @@
 import {createApp} from "vue/dist/vue.esm-bundler";
 import {createRouter, createWebHashHistory} from 'vue-router'
 
-import gamePage from "./pages/game.vue"
+import gamePage from "./pages/ticTacToe.vue"
 import homePage from "./pages/homePage.vue"
 import aboutUs from "./pages/aboutUs.vue"
 
