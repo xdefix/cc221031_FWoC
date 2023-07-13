@@ -1,20 +1,28 @@
 <template>
   <div class="about-us">
-    <h1>About Us</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Our mission is to build high-quality software that solves real-world problems for our clients.</p>
-  </div>
+    <h1>About the game</h1>
+    <p>Players take turns putting their marks in empty squares. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</p>
+    </div>
 </template>
 
 <style>
 .about-us {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  border: 1px solid black;
   text-align: center;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #171717;
+  color: #00ff00;
+  filter: drop-shadow(0 0 5px #00ff00);
+  transition: filter 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .about-us h1 {

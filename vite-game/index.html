@@ -30,14 +30,14 @@
   </style>
   <body>
     <div id="app">
-        <h1>Hello App!</h1>
+        <h1>Hello!</h1>
         <p>
             <!-- use the router-link component for navigation. -->
             <!-- specify the link by passing the `to` prop. -->
             <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
-            <router-link to="/">Go to Home</router-link>
-            <router-link to="/about">Go to About</router-link>
-            <router-link to="/game">Go to Game</router-link>
+            <button><router-link style="text-decoration: none; color: inherit;" to="/">Home</router-link></button>
+            <button><router-link style="text-decoration: none; color: inherit;" to="/about">About Game</router-link></button>
+            <button><router-link style="text-decoration: none; color: inherit;" to="/game">Game</router-link></button>
         </p>
         <!-- route outlet -->
         <!-- component matched by the route will render here -->
